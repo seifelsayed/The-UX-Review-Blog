@@ -1,0 +1,182 @@
+/* Mobile Devices (0px to 767px) */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .header-container,
+  .container {
+    width: 92%;
+  }
+
+  .navbar {
+    padding: 8px 14px;
+  }
+
+  .logo a {
+    font-size: 22px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links,
+  .header-actions {
+    display: none;
+  }
+
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+
+  .hero-grid,
+  .articles-layout,
+  .authors-grid,
+  .community-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .hero-image-frame {
+    height: 240px;
+    transform: rotate(0deg);
+  }
+
+  .badge-fresh {
+    display: none;
+  }
+
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .article-inner {
+    flex-direction: column;
+  }
+
+  .article-thumb-wrapper {
+    width: 100%;
+    height: 180px;
+  }
+
+  .btn-load-more,
+  .btn-community {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer-legal-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Tablets (768px to 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links,
+  .header-actions {
+    display: none;
+  }
+
+  .hero-grid,
+  .articles-layout,
+  .community-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+  }
+
+  .hero-image-frame {
+    height: 340px;
+  }
+
+  .authors-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .author-card:nth-child(3) {
+    grid-column: span 2;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand-col {
+    grid-column: span 2;
+  }
+}
+
+/* Small Laptops (992px to 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links,
+  .header-actions {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 60px;
+  }
+
+  .hero-image-frame {
+    height: 340px;
+  }
+
+  .authors-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .author-card {
+    padding: 20px 14px;
+  }
+
+  .author-name {
+    font-size: 24px;
+  }
+}
+
+/* Standard Desktop (1200px to 2560px) */
+@media screen and (min-width: 1200px) and (max-width: 2560px) {
+  .menu-toggle,
+  .mobile-menu-container {
+    display: none;
+  }
+
+  .nav-links,
+  .header-actions {
+    display: block;
+  }
+}
